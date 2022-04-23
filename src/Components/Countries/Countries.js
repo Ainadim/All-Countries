@@ -15,7 +15,7 @@ const Countries = () => {
         return (
           <div className="country-details">
             <h5>Name: {country.name.common}</h5>
-            {/* <h6>Language: {country.languages}</h6> */}
+            {/* <h6>Language: {country.languages.spa}</h6> */}
             <img src={country.flags.png} alt="Flags" />
           </div>
         );
