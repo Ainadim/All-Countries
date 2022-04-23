@@ -1,6 +1,6 @@
 .all-country {
   display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .country-details {
   background-color: #4e4646;
