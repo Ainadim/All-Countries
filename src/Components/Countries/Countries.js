@@ -4,7 +4,7 @@ import "./Countries.css";
 const Countries = () => {
   const [countries, setCountries] = useState([]);
   useEffect(() => {
-    fetch("https://restcountries.com/v2/all")
+    fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())
       .then((data) => setCountries(data));
   }, []);
@@ -15,7 +15,7 @@ const Countries = () => {
         return (
           <div className="country-details">
             <h5>Name: {country.name.common}</h5>
-            <h6>Language: {country.languages[0].name}</h6>
+            {/* <h6>Language: {country.languages}</h6> */}
             <img src={country.flags.png} alt="Flags" />
           </div>
         );
